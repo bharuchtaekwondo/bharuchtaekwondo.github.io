@@ -1,302 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Bharuch District Taekwondo Association | BDTA, Ankleshwar</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta
-      content="Bharuch District Taekwondo Association | BDTA, Taekwondo, Bharuch, Ankleshwar"
-      name="keywords"
-    />
-    <meta
-      content="Bharuch District Taekwondo Association | BDTA"
-      name="description"
-    />
 
-    <!-- Favicon -->
-    <link href="/assets/logo_bdta_circle.png" rel="icon" />
+<head>
+  <meta charset="utf-8" />
+  <title>Bharuch District Taekwondo Association | BDTA, Ankleshwar</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="Bharuch District Taekwondo Association | BDTA, Taekwondo, Bharuch, Ankleshwar" name="keywords" />
+  <meta content="Bharuch District Taekwondo Association | BDTA" name="description" />
 
-    <!-- Font Awesome -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
+  <!-- Favicon -->
+  <link href="/assets/logo_bdta_circle.png" rel="icon" />
 
-    <!-- Flaticon Font -->
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+</head>
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.min.css" rel="stylesheet" />
-  </head>
+<body class="bg-white">
+  <div class="container pt-5">
 
-  <body class="bg-white">
-    <!-- Navbar Start -->
-   
-    <!-- Navbar End -->
+    <div class="row">
+      <div class="col-md-12 pb-5">
 
-    <!-- Page Header Start -->
-    
-        <!-- <h4
-          class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold"
-        >
-          Contact Us
-        </h4> -->
-        <!-- <div class="d-inline-flex">
-          <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
-          <p class="m-0 text-white px-2">/</p>
-          <p class="m-0 text-white">Contact Us</p>
-        </div> -->
-      </div>
-    </div>
-    <!-- Page Header End -->
-
-    <!-- Contact Start -->
-    <div class="container pt-5">
-      
-      <div class="row">
-        <div class="col-md-12 pb-5">
-          
-    <iframe
-    id="JotFormIFrame-220830944640049"
-    title="Admission Information Form"
-    onload="window.parent.scrollTo(0,0)"
-    allowtransparency="true"
-    allowfullscreen="true"
-    allow="geolocation; microphone; camera"
-    src="https://form.jotform.com/220830944640049"
-    frameborder="0"
-    style="
+        <iframe id="JotFormIFrame-220830944640049" title="Admission Information Form"
+          onload="window.parent.scrollTo(0,0)" allowtransparency="true" allowfullscreen="true"
+          allow="geolocation; microphone; camera" src="https://form.jotform.com/220830944640049" frameborder="0" style="
     min-width: 100%;
     height:539px;
-    border:none;"
-    scrolling="no"
-  >
-  </iframe>
-  <script type="text/javascript">
-    var ifr = document.getElementById("JotFormIFrame-220830944640049");
-    if (ifr) {
-      var src = ifr.src;
-      var iframeParams = [];
-      if (window.location.href && window.location.href.indexOf("?") > -1) {
-        iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
-      }
-      if (src && src.indexOf("?") > -1) {
-        iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
-        src = src.substr(0, src.indexOf("?"))
-      }
-      iframeParams.push("isIframeEmbed=1");
-      ifr.src = src + "?" + iframeParams.join('&');
-    }
-    window.handleIFrameMessage = function(e) {
-      if (typeof e.data === 'object') { return; }
-      var args = e.data.split(":");
-      if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
-      if (!iframe) { return; }
-      switch (args[0]) {
-        case "scrollIntoView":
-          iframe.scrollIntoView();
-          break;
-        case "setHeight":
-          iframe.style.height = args[1] + "px";
-          break;
-        case "collapseErrorPage":
-          if (iframe.clientHeight > window.innerHeight) {
-            iframe.style.height = window.innerHeight + "px";
-          }
-          break;
-        case "reloadPage":
-          window.location.reload();
-          break;
-        case "loadScript":
-          if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
-          var src = args[1];
-          if (args.length > 3) {
-              src = args[1] + ':' + args[2];
-          }
-          var script = document.createElement('script');
-          script.src = src;
-          script.type = 'text/javascript';
-          document.body.appendChild(script);
-          break;
-        case "exitFullscreen":
-          if      (window.document.exitFullscreen)        window.document.exitFullscreen();
-          else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
-          else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
-          else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
-          else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
-          break;
-      }
-      var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
-      if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
-        var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
-        iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
-      }
-    };
-    window.isPermitted = function(originUrl, whitelisted_domains) {
-      var url = document.createElement('a');
-      url.href = originUrl;
-      var hostname = url.hostname;
-      var result = false;
-      if( typeof hostname !== 'undefined' ) {
-        whitelisted_domains.forEach(function(element) {
-            if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
-                result = true;
+    border:none;" scrolling="no">
+        </iframe>
+        <script type="text/javascript">
+          var ifr = document.getElementById("JotFormIFrame-220830944640049");
+          if (ifr) {
+            var src = ifr.src;
+            var iframeParams = [];
+            if (window.location.href && window.location.href.indexOf("?") > -1) {
+              iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
             }
-        });
-        return result;
-      }
-    };
-    if (window.addEventListener) {
-      window.addEventListener("message", handleIFrameMessage, false);
-    } else if (window.attachEvent) {
-      window.attachEvent("onmessage", handleIFrameMessage);
-    }
-    </script>
-        </div>
-        <!-- <div class="col-md-6 pb-5">
-                <div class="contact-form">
-                    <div id="success"></div>
-                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                        <div class="control-group">
-                            <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <textarea class="form-control" rows="6" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div>
-                            <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send Message</button>
-                        </div>
-                    </form>
-                </div>
-            </div> -->
+            if (src && src.indexOf("?") > -1) {
+              iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+              src = src.substr(0, src.indexOf("?"))
+            }
+            iframeParams.push("isIframeEmbed=1");
+            ifr.src = src + "?" + iframeParams.join('&');
+          }
+          window.handleIFrameMessage = function (e) {
+            if (typeof e.data === 'object') { return; }
+            var args = e.data.split(":");
+            if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+            if (!iframe) { return; }
+            switch (args[0]) {
+              case "scrollIntoView":
+                iframe.scrollIntoView();
+                break;
+              case "setHeight":
+                iframe.style.height = args[1] + "px";
+                break;
+              case "collapseErrorPage":
+                if (iframe.clientHeight > window.innerHeight) {
+                  iframe.style.height = window.innerHeight + "px";
+                }
+                break;
+              case "reloadPage":
+                window.location.reload();
+                break;
+              case "loadScript":
+                if (!window.isPermitted(e.origin, ['jotform.com', 'jotform.pro'])) { break; }
+                var src = args[1];
+                if (args.length > 3) {
+                  src = args[1] + ':' + args[2];
+                }
+                var script = document.createElement('script');
+                script.src = src;
+                script.type = 'text/javascript';
+                document.body.appendChild(script);
+                break;
+              case "exitFullscreen":
+                if (window.document.exitFullscreen) window.document.exitFullscreen();
+                else if (window.document.mozCancelFullScreen) window.document.mozCancelFullScreen();
+                else if (window.document.mozCancelFullscreen) window.document.mozCancelFullScreen();
+                else if (window.document.webkitExitFullscreen) window.document.webkitExitFullscreen();
+                else if (window.document.msExitFullscreen) window.document.msExitFullscreen();
+                break;
+            }
+            var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+            if (isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+              var urls = { "docurl": encodeURIComponent(document.URL), "referrer": encodeURIComponent(document.referrer) };
+              iframe.contentWindow.postMessage(JSON.stringify({ "type": "urls", "value": urls }), "*");
+            }
+          };
+          window.isPermitted = function (originUrl, whitelisted_domains) {
+            var url = document.createElement('a');
+            url.href = originUrl;
+            var hostname = url.hostname;
+            var result = false;
+            if (typeof hostname !== 'undefined') {
+              whitelisted_domains.forEach(function (element) {
+                if (hostname.slice((-1 * element.length - 1)) === '.'.concat(element) || hostname === element) {
+                  result = true;
+                }
+              });
+              return result;
+            }
+          };
+          if (window.addEventListener) {
+            window.addEventListener("message", handleIFrameMessage, false);
+          } else if (window.attachEvent) {
+            window.attachEvent("onmessage", handleIFrameMessage);
+          }
+        </script>
       </div>
-    </div>
-    <!-- Contact End -->
 
-    <!-- Footer Start -->
-    <div class="footer container-fluid mt-5 py-5 px-sm-3 px-md-5 text-white">
-      <div class="row pt-5">
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h4 class="text-primary mb-4">Call us now!</h4>
-          <p>
-            <i class="fa fa-map-marker-alt mr-2"></i>D-2, GardenCity,
-            Ankleshwar, Gujarat - 393001
-          </p>
-          <p><i class="fa fa-phone-alt mr-2"></i>+91 98980 35938</p>
-          <!-- <p><i class="fa fa-envelope mr-2"></i>info@example.com</p> -->
-          <div class="d-flex justify-content-start mt-4">
-            <a
-              class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
-              style="width: 40px; height: 40px"
-              href="https://www.google.co.in/search?ved=1t:65428&hl=en&_ga=2.238100227.28350326.1647427175-644406953.1647427175&q=Bharuch+District+Taekwondo+Association&ludocid=10674922422217736577&lsig=AB86z5VnivdtKQ70euIhTEJbButS#fpstate=lie"
-              target="_blank"
-              ><i class="fab fa-google"></i
-            ></a>
-            <a
-              class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
-              style="width: 40px; height: 40px"
-              href="https://www.facebook.com/babu.rajan.773"
-              target="_blank"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
-              style="width: 40px; height: 40px"
-              href="https://wa.me/919898035938"
-              target="_blank"
-              ><i class="fab fa-whatsapp"></i
-            ></a>
-            <a
-              class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
-              style="width: 40px; height: 40px"
-              href="https://www.instagram.com/baburajan82/?hl=en"
-              target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h4 class="text-primary mb-4">Quick Links</h4>
-          <div class="d-flex flex-column justify-content-start">
-            <a class="text-white mb-2" href="index.html"
-              ><i class="fa fa-angle-right mr-2"></i>Home</a
-            >
-            <a class="text-white mb-2" href="#about"
-              ><i class="fa fa-angle-right mr-2"></i>About Us</a
-            >
-            <a class="text-white mb-2" href="#features"
-              ><i class="fa fa-angle-right mr-2"></i>Our Features</a
-            >
-            <a class="text-white mb-2" href="#classes"
-              ><i class="fa fa-angle-right mr-2"></i>Classes</a
-            >
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h4 class="text-primary mb-4">Popular Links</h4>
-          <div class="d-flex flex-column justify-content-start">
-            <a
-              class="text-white mb-2"
-              href="https://www.google.co.in/search?ved=1t:65428&hl=en&_ga=2.238100227.28350326.1647427175-644406953.1647427175&q=Bharuch+District+Taekwondo+Association&ludocid=10674922422217736577&lsig=AB86z5VnivdtKQ70euIhTEJbButS#fpstate=lie"
-              ><i class="fa fa-angle-right mr-2"></i>Our Google Profile</a
-            >
-            <a class="text-white mb-2" href="http://www.worldtaekwondo.org/"
-              ><i class="fa fa-angle-right mr-2"></i>World Taekwondo
-              Federation</a
-            >
-            <a class="text-white mb-2" href="http://www.kukkiwon.or.kr/"
-              ><i class="fa fa-angle-right mr-2"></i>Kukkiwon</a
-            >
-            <a class="text-white" href="https://wa.me/919898035938"
-              ><i class="fa fa-angle-right mr-2"></i>WhatsApp Us</a
-            >
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5">
-          <h4 class="text-primary mb-4">Scan QR Code</h4>
-          <img src="/img/QR_BDTA.png" width="135px"/>
-        </div>
-      </div>
-      <div class="container border-top border-dark pt-5">
-        <p class="m-0 text-center text-white">
-          &copy;
-          <a class="text-white font-weight-bold" href="https://websycode.in"
-            >Bharuch District Taekwondo Association</a
-          >. All Rights Reserved. Designed by
-          <a class="text-white font-weight-bold" href="https://websycode.in"
-            >Shaunak Pandya, WebSyCode</a
-          >
-        </p>
-      </div>
-    </div>
-    <!-- Footer End -->
+</body>
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-primary back-to-top"
-      ><i class="fa fa-angle-double-up"></i
-    ></a>
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-  </body>
 </html>
